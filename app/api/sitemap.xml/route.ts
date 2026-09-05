@@ -11,22 +11,24 @@ const staticRoutes = [
   { path: "/for-roommates", priority: "0.9", changefreq: "weekly" },
   { path: "/tools/grocery-list-maker", priority: "0.95", changefreq: "weekly" },
   { path: "/tools/chore-chart-generator", priority: "0.95", changefreq: "weekly" },
-  { path: "/about", priority: "0.7", changefreq: "monthly" },
   { path: "/features", priority: "0.9", changefreq: "weekly" },
-  { path: "/support", priority: "0.7", changefreq: "monthly" },
-  { path: "/help", priority: "0.7", changefreq: "monthly" },
-  { path: "/faq", priority: "0.7", changefreq: "monthly" },
   { path: "/getting-started", priority: "0.8", changefreq: "monthly" },
   { path: "/how-it-works", priority: "0.8", changefreq: "monthly" },
+  { path: "/about", priority: "0.7", changefreq: "monthly" },
+  { path: "/help", priority: "0.7", changefreq: "monthly" },
+  { path: "/faq", priority: "0.7", changefreq: "monthly" },
+  { path: "/support", priority: "0.7", changefreq: "monthly" },
   { path: "/community-guidelines", priority: "0.5", changefreq: "monthly" },
-  { path: "/delete-account", priority: "0.3", changefreq: "yearly" },
   { path: "/privacy-policy", priority: "0.5", changefreq: "monthly" },
   { path: "/terms-of-use", priority: "0.5", changefreq: "monthly" },
+  { path: "/delete-account", priority: "0.3", changefreq: "yearly" },
+  { path: "/confirm-email", priority: "0.3", changefreq: "yearly" },
+  { path: "/reset-password", priority: "0.3", changefreq: "yearly" },
 ];
 
 const featureRoutes = FEATURE_LIST.map((feature) => ({
   path: `/features/${feature.slug}`,
-  priority: "0.8",
+  priority: "0.85",
   changefreq: "weekly",
 }));
 
