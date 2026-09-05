@@ -33,13 +33,33 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/help" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
-                  Help Center
+                <Link href="/blog" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
+                  Blog &amp; Guides
                 </Link>
               </li>
               <li>
-                <Link href="/support" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
-                  Support
+                <Link href="/for-couples" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
+                  For Couples
+                </Link>
+              </li>
+              <li>
+                <Link href="/for-families" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
+                  For Families
+                </Link>
+              </li>
+              <li>
+                <Link href="/for-roommates" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
+                  For Roommates
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/grocery-list-maker" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
+                  Free Grocery List Tool
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/chore-chart-generator" className="text-sm text-muted-foreground font-light hover:text-primary transition-colors">
+                  Free Chore Generator
                 </Link>
               </li>
             </ul>

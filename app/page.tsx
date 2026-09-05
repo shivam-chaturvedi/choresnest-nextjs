@@ -248,6 +248,113 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Curated Human-First Guides Section */}
+      <section className="section-fade border-b border-border bg-background">
+        <div className="container py-24">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
+            <div className="max-w-2xl">
+              <span className="text-xs uppercase font-bold tracking-widest text-primary mb-3 block">
+                Practical Systems &amp; Guides
+              </span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
+                Ideas for a calmer, more organized home
+              </h2>
+              <p className="mt-3 text-muted-foreground font-light text-base md:text-lg leading-relaxed">
+                Thoughtful, human-first strategies for stress-free groceries, fair chore routines, and realistic meal planning.
+              </p>
+            </div>
+            <div className="mt-6 md:mt-0">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+              >
+                View all articles <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 hover:border-primary/40 hover:shadow-md transition-all">
+              <div>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                  <span className="font-semibold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+                    Groceries &amp; Shopping
+                  </span>
+                  <span>•</span>
+                  <span>8 min read</span>
+                </div>
+                <h3 className="text-xl font-heading font-bold text-foreground group-hover:text-primary transition-colors leading-snug mb-3">
+                  <Link href="/blog/the-grocery-list-that-actually-makes-weekly-shopping-easier">
+                    The Grocery List That Actually Makes Weekly Shopping Easier
+                  </Link>
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6 line-clamp-3">
+                  Learn how to build a realistic grocery list workflow that saves money, eliminates forgotten items, and keeps your kitchen stocked all week.
+                </p>
+              </div>
+              <Link
+                href="/blog/the-grocery-list-that-actually-makes-weekly-shopping-easier"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:translate-x-1 transition-transform"
+              >
+                Read guide <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </article>
+
+            <article className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 hover:border-primary/40 hover:shadow-md transition-all">
+              <div>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                  <span className="font-semibold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+                    Household Management
+                  </span>
+                  <span>•</span>
+                  <span>9 min read</span>
+                </div>
+                <h3 className="text-xl font-heading font-bold text-foreground group-hover:text-primary transition-colors leading-snug mb-3">
+                  <Link href="/blog/how-do-couples-fairly-split-household-chores">
+                    How Couples Can Fairly Split Household Chores Without Resentment
+                  </Link>
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6 line-clamp-3">
+                  Explore practical techniques to balance the invisible mental load, establish zone ownership, and build a lasting domestic partnership.
+                </p>
+              </div>
+              <Link
+                href="/blog/how-do-couples-fairly-split-household-chores"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:translate-x-1 transition-transform"
+              >
+                Read guide <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </article>
+
+            <article className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 hover:border-primary/40 hover:shadow-md transition-all">
+              <div>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                  <span className="font-semibold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+                    Meal Planning
+                  </span>
+                  <span>•</span>
+                  <span>8 min read</span>
+                </div>
+                <h3 className="text-xl font-heading font-bold text-foreground group-hover:text-primary transition-colors leading-snug mb-3">
+                  <Link href="/blog/a-simple-weekly-meal-planner-for-people-who-hate-meal-planning">
+                    A Simple Weekly Meal Planner for People Who Hate Meal Planning
+                  </Link>
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6 line-clamp-3">
+                  You do not need spreadsheets or four-hour prep marathons. Here is a realistic 15-minute weekly meal planning approach.
+                </p>
+              </div>
+              <Link
+                href="/blog/a-simple-weekly-meal-planner-for-people-who-hate-meal-planning"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:translate-x-1 transition-transform"
+              >
+                Read guide <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-foreground section-fade">
         <div className="container py-24 text-center">
           <h2 className="text-3xl md:text-4xl text-primary-foreground">
