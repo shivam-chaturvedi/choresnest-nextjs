@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.choresnest",
+      "sha256_cert_fingerprints": [
+        "A7:C4:4E:9D:03:93:C7:B3:07:4B:08:6C:55:F5:EE:03:04:33:76:30:9F:14:45:04:3A:E5:FD:C5:56:7D:F5:84",
+        "4F:EA:1C:62:77:89:0E:B3:53:B8:E8:A5:D8:9B:F1:59:A9:47:F6:93:9F:D6:41:25:8A:82:E5:93:CD:4D:14:16"
+      ]
+    }
+  }
+]
