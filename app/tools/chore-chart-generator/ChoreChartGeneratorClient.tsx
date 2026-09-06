@@ -249,7 +249,7 @@ export default function ChoreChartGeneratorClient() {
               How Couples Can Fairly Split Household Chores Without Resentment
             </span>
             <span className="text-xs text-muted-foreground font-light">
-              Practical techniques to balance the mental load and divide chores seamlessly.
+              Clear ways to share chores fairly and stop arguing about household tasks.
             </span>
           </Link>
         </div>

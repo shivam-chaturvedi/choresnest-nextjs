@@ -37,6 +37,10 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
+          {
+            key: "Content-Security-Policy",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https: https://www.googletagmanager.com https://www.google-analytics.com https://launchbuff.com https://viberank.dev https://api.producthunt.com https://media.licdn.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://firebaseinstallations.googleapis.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.producthunt.com; base-uri 'self'; form-action 'self';",
+          },
         ],
       },
     ];

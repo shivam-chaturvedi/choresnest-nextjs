@@ -153,7 +153,7 @@ export default function ForCouplesPage() {
             How Couples Can Fairly Split Household Chores Without Resentment
           </h3>
           <p className="text-muted-foreground font-light leading-relaxed mb-6">
-            Explore our research-backed guide on identifying the invisible mental load, establishing zone ownership, and ending daily domestic friction.
+            Read our practical guide on how to divide household responsibilities fairly, share ownership of chores, and stop nagging each other.
           </p>
           <Link
             href="/blog/how-do-couples-fairly-split-household-chores"

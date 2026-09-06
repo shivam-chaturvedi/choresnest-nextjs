@@ -20,7 +20,7 @@ import { canonicalUrl, DEFAULT_DESCRIPTION, DEFAULT_KEYWORDS, OG_IMAGE, mergeKey
 import VideoDemo from "@/components/VideoDemo";
 import PlayStoreBanner from "@/components/ui/PlayStoreBanner";
 
-const description = "The #1 Family Organizer. Simplify your everyday life with one place for organizing all your family's schedules, lists and information.";
+const description = "The simple family organizer app. Keep your household chores, grocery lists, calendar, and shared expenses all in one place.";
 const schemaDescription = DEFAULT_DESCRIPTION;
 const homepageKeywords = [
   "family organizer app",
@@ -150,7 +150,7 @@ export default function HomePage() {
                 Organize Family Life in One Place
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Chores Nest is an offline-first family organizer app that unifies shared calendars, chore tracking, synchronized grocery lists, expense budgeting, and secure family documents into one private workspace designed for real households.
+                Running a home with a partner, family, or roommates gets messy when plans are scattered across chat apps, paper notes, and mental checklists. Chores Nest brings your chores, grocery list, shared calendar, expenses, and important home documents into one clean, private place that even works offline.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
@@ -206,7 +206,7 @@ export default function HomePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.4em] text-accent">See Chores Nest in Action</p>
             <h2 className="mt-4 text-4xl font-heading text-foreground">How does the shared household dashboard work?</h2>
             <p className="mt-4 text-muted-foreground max-w-2xl text-lg">
-              Watch a short demo showing how Chores Nest keeps calendars, tasks, and shared notes in sync so every family member stays aligned in real time.
+              Take a look at how Chores Nest keeps your schedule, grocery lists, and daily chores in sync so nobody in the house has to ask "who is doing dinner tonight?"
             </p>
           </div>
           <div className="flex-1 flex justify-center">
@@ -220,7 +220,7 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl text-foreground">Why do families choose Chores Nest?</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Chores Nest eliminates household mental load by consolidating 6 core management modules (calendars, chores, shopping lists, notes, expenses, and document vaults) into one unified, offline-first family platform.
+              No more sticky notes on the fridge, duplicate grocery runs, or texting back and forth about who is taking out the trash. Chores Nest gives everyone at home a clear, shared view of what needs to get done each day.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -279,7 +279,7 @@ export default function HomePage() {
                 What practical systems help build a calmer home?
               </h2>
               <p className="mt-3 text-muted-foreground font-light text-base md:text-lg leading-relaxed">
-                Thoughtful, human-first strategies for stress-free groceries, fair chore routines, and realistic meal planning.
+                Practical ideas and everyday tips for easier grocery shopping, fair chore routines, and stress-free family schedules.
               </p>
             </div>
             <div className="mt-6 md:mt-0">

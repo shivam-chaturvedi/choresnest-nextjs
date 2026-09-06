@@ -84,7 +84,7 @@ export default function BlogIndexPage() {
           Chores Nest Blog
         </h1>
         <p className="mt-4 text-lg md:text-xl text-muted-foreground font-light max-w-3xl leading-relaxed">
-          Thoughtful, human-first guides on grocery planning, chore routines, meal schedules, and household finances to help your family live with greater clarity and calm.
+          Helpful guides, honest advice, and simple systems for grocery shopping, splitting chores fairly, and managing money without the headache.
         </p>
       </div>
 

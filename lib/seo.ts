@@ -3,7 +3,7 @@ export const SITE_NAME = "Chores Nest";
 export const SITE_URL = "https://choresnest.com";
 
 export const DEFAULT_DESCRIPTION =
-  "Chores Nest is a family organizer app that helps households manage chores, calendars, shopping lists, finances, notes, and documents in one secure shared workspace.";
+  "Chores Nest is a simple family organizer app that helps you manage shared chores, grocery lists, family calendars, expenses, and documents in one private place.";
 
 export const DEFAULT_KEYWORDS = [
   "family organizer app",
@@ -65,11 +65,12 @@ export const founderPersonSchema = {
     "@id": `${SITE_URL}/#organization`,
   },
   knowsAbout: [
-    "Household Management Systems",
-    "Family Productivity Tools",
+    "Household Management",
+    "Family Productivity",
+    "Chore Tracking",
+    "Shared Grocery Lists",
     "Offline-First Architecture",
-    "Android Development",
-    "Full-Stack Web Development",
+    "Mobile App Engineering",
   ],
 };
 
@@ -82,10 +83,60 @@ export const organizationSchema = {
   logo: `${SITE_URL}/app_icon.png`,
   image: `${SITE_URL}/app_icon.png`,
   description: DEFAULT_DESCRIPTION,
+  inLanguage: "en-US",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "IN",
+  },
   founder: {
     "@id": `${SITE_URL}/#founder`,
   },
   sameAs: ORGANIZATION_SAME_AS,
+  knowsAbout: [
+    "Household Management",
+    "Family Organization",
+    "Chore Tracking",
+    "Shared Grocery Lists",
+    "Family Calendar Sync",
+    "Roommate Expense Splitting",
+    "Offline-First Mobile Apps",
+    "Family Coordination",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Chores Nest Apps & Tools",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "SoftwareApplication",
+          name: "Chores Nest Android App",
+          applicationCategory: "LifestyleApplication",
+          operatingSystem: "Android",
+          url: "https://play.google.com/store/apps/details?id=com.choresnest",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "WebApplication",
+          name: "Chores Nest Web Tools",
+          applicationCategory: "ProductivityApplication",
+          url: "https://choresnest.com/tools/chore-chart-generator",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+        },
+      },
+    ],
+  },
   contactPoint: [
     {
       "@type": "ContactPoint",
@@ -102,7 +153,7 @@ export const websiteSchema = {
   url: SITE_URL,
   name: SITE_NAME,
   description: DEFAULT_DESCRIPTION,
-  inLanguage: "en",
+  inLanguage: "en-US",
   publisher: {
     "@id": `${SITE_URL}/#organization`,
   },

@@ -35,8 +35,18 @@ export const metadata: Metadata = {
   },
   description: DEFAULT_DESCRIPTION,
   keywords: DEFAULT_KEYWORDS,
+  alternates: {
+    canonical: SITE_URL,
+    types: {
+      "text/plain": [
+        { url: `${SITE_URL}/llms.txt`, title: "LLMs.txt" },
+        { url: `${SITE_URL}/llms-full.txt`, title: "LLMs-Full.txt" },
+      ],
+    },
+  },
   openGraph: {
     type: "website",
+    locale: "en_US",
     siteName: SITE_NAME,
     title: "Chores Nest – Family Organizer, Chores & Shared Calendar",
     description: DEFAULT_DESCRIPTION,
@@ -56,6 +66,19 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  other: {
+    robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   },
 };
 
@@ -92,6 +115,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="llms-full.txt" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -103,6 +128,19 @@ export default function RootLayout({
         </a>
         {shouldLoadAnalytics && (
           <>
+            <Script id="google-consent-default" strategy="beforeInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('consent', 'default', {
+                  'analytics_storage': 'granted',
+                  'ad_storage': 'denied',
+                  'ad_user_data': 'denied',
+                  'ad_personalization': 'denied',
+                  'wait_for_update': 500
+                });
+              `}
+            </Script>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
               strategy="lazyOnload"
@@ -112,7 +150,10 @@ export default function RootLayout({
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${GA_MEASUREMENT_ID}');
+                gtag('config', '${GA_MEASUREMENT_ID}', {
+                  anonymize_ip: true,
+                  send_page_view: true
+                });
               `}
             </Script>
           </>
