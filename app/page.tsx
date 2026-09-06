@@ -7,10 +7,10 @@ import {
   CheckSquare,
   DollarSign,
   Heart,
+  Layers,
   Lock,
   Shield,
   ShoppingCart,
-  Sparkles,
   StickyNote,
   Users,
   WifiOff,
@@ -55,14 +55,16 @@ const softwareApplicationSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: {
+    absolute: "Chores Nest – Family Organizer, Chores & Shared Calendar",
+  },
   description,
   keywords: mergeKeywords(DEFAULT_KEYWORDS, homepageKeywords),
   alternates: {
     canonical: canonicalUrl("/"),
   },
   openGraph: {
-    title: "Chores Nest | One Place for Family Organization",
+    title: "Chores Nest – Family Organizer, Chores & Shared Calendar",
     description,
     url: canonicalUrl("/"),
     siteName: "Chores Nest",
@@ -70,7 +72,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Chores Nest | One Place for Family Organization",
+    title: "Chores Nest – Family Organizer, Chores & Shared Calendar",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],
@@ -112,7 +114,7 @@ const features = [
 
 const benefits = [
   {
-    icon: Sparkles,
+    icon: Layers,
     title: "One App for Everything",
     desc: "Manage chores, schedules, lists, notes, finances, and documents from a single shared workspace.",
   },
@@ -148,7 +150,7 @@ export default function HomePage() {
                 Organize Family Life in One Place
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Family Chores helps families stay organized with shared calendars, chores, shopping lists, documents, finances, and more — all in one secure app designed for real households.
+                Chores Nest is an offline-first family organizer app that unifies shared calendars, chore tracking, synchronized grocery lists, expense budgeting, and secure family documents into one private workspace designed for real households.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
@@ -165,6 +167,23 @@ export default function HomePage() {
                 >
                   Explore Features <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <a
+                  href="https://www.producthunt.com/products/chores-nest-family-organizer/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-chores-nest-family-organizer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 transition-opacity"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1310482&theme=light"
+                    alt="Chores Nest: Family Organizer - Organize family life in one simple app | Product Hunt"
+                    style={{ width: "250px", height: "54px" }}
+                    width="250"
+                    height="54"
+                  />
+                </a>
               </div>
             </div>
             <div className="flex-1 w-full flex items-center justify-center">
@@ -185,9 +204,9 @@ export default function HomePage() {
         <div className="flex flex-col gap-10 rounded-[40px] border border-border bg-card/70 px-6 py-10 md:flex-row">
           <div className="flex-1 flex flex-col justify-center">
             <p className="text-sm font-semibold uppercase tracking-[0.4em] text-accent">See Chores Nest in Action</p>
-            <h2 className="mt-4 text-4xl font-heading text-foreground">Watch the shared household dashboard</h2>
+            <h2 className="mt-4 text-4xl font-heading text-foreground">How does the shared household dashboard work?</h2>
             <p className="mt-4 text-muted-foreground max-w-2xl text-lg">
-              Watch a short demo showing how Chores Nest keeps calendars, tasks, and shared notes in sync so every family member stays aligned.
+              Watch a short demo showing how Chores Nest keeps calendars, tasks, and shared notes in sync so every family member stays aligned in real time.
             </p>
           </div>
           <div className="flex-1 flex justify-center">
@@ -199,9 +218,9 @@ export default function HomePage() {
       <section className="section-fade">
         <div className="container py-24">
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-foreground">Why Families Love Family Chores</h2>
+          <h2 className="text-3xl md:text-4xl text-foreground">Why do families choose Chores Nest?</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Families today use too many apps to manage daily life. Family Chores brings everything together into a single shared space where every member of the household can stay organized and connected.
+              Chores Nest eliminates household mental load by consolidating 6 core management modules (calendars, chores, shopping lists, notes, expenses, and document vaults) into one unified, offline-first family platform.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -221,9 +240,9 @@ export default function HomePage() {
       <section className="bg-secondary section-fade">
         <div className="container py-24">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl text-foreground">Feature Highlights</h2>
+            <h2 className="text-3xl md:text-4xl text-foreground">What features are included in Chores Nest?</h2>
             <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
-              Everything your family needs to stay organized, all in one app.
+              Everything your household needs to stay coordinated, all in one secure app.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -257,7 +276,7 @@ export default function HomePage() {
                 Practical Systems &amp; Guides
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-                Ideas for a calmer, more organized home
+                What practical systems help build a calmer home?
               </h2>
               <p className="mt-3 text-muted-foreground font-light text-base md:text-lg leading-relaxed">
                 Thoughtful, human-first strategies for stress-free groceries, fair chore routines, and realistic meal planning.
@@ -382,6 +401,26 @@ export default function HomePage() {
           </p>
         </div>
         <PlayStoreBanner />
+        <div className="mt-10 flex flex-col items-center justify-center text-center">
+          <p className="text-sm font-medium text-muted-foreground mb-3">
+            Using Chores Nest? Share your feedback &amp; rate us:
+          </p>
+          <a
+            href="https://www.producthunt.com/products/chores-nest-family-organizer/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-chores-nest-family-organizer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-90 transition-opacity inline-block"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1310482&theme=light"
+              alt="Chores Nest: Family Organizer - Organize family life in one simple app | Product Hunt"
+              style={{ width: "250px", height: "54px" }}
+              width="250"
+              height="54"
+            />
+          </a>
+        </div>
       </section>
     </div>
   );

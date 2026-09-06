@@ -7,13 +7,15 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE, mergeKey
 const description = "Need help using Chores Nest? Browse support resources, contact our team, or visit the Help Center.";
 
 const supportSchema = createWebPageSchema({
-  title: "Support | Chores Nest",
+  title: "Customer Support & Contact – Chores Nest Family App",
   description,
   url: canonicalUrl("/support"),
 });
 
 export const metadata: Metadata = {
-  title: "Support",
+  title: {
+    absolute: "Customer Support & Contact – Chores Nest Family App",
+  },
   description,
   keywords: mergeKeywords(DEFAULT_KEYWORDS, [
     "choresnest help center",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     canonical: canonicalUrl("/support"),
   },
   openGraph: {
-    title: "Chores Nest Support",
+    title: "Customer Support & Contact – Chores Nest Family App",
     description,
     url: canonicalUrl("/support"),
     siteName: "Chores Nest",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Chores Nest Support",
+    title: "Customer Support & Contact – Chores Nest Family App",
     card: "summary_large_image",
     images: [OG_IMAGE.url],
     description,

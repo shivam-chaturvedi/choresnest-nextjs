@@ -5,20 +5,22 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@
 const description = "Review Chores Nest's privacy statement to understand how we collect, use, and protect household data.";
 
 const privacySchema = createWebPageSchema({
-  title: "Privacy Policy | Chores Nest",
+  title: "Privacy Policy – Data Protection & Security | Chores Nest",
   description,
   url: canonicalUrl("/privacy-policy"),
 });
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Chores Nest",
+  title: {
+    absolute: "Privacy Policy – Data Protection & Security | Chores Nest",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "privacy", "data protection"],
+  keywords: [...DEFAULT_KEYWORDS, "privacy", "data protection", "household security policy", "privacy policy"],
   alternates: {
     canonical: canonicalUrl("/privacy-policy"),
   },
   openGraph: {
-    title: "Chores Nest Privacy Statement",
+    title: "Privacy Policy – Data Protection & Security | Chores Nest",
     description,
     url: canonicalUrl("/privacy-policy"),
     siteName: "Chores Nest",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Chores Nest Privacy Statement",
+    title: "Privacy Policy – Data Protection & Security | Chores Nest",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

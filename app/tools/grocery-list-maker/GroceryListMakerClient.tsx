@@ -7,7 +7,6 @@ import {
   Copy,
   Plus,
   Trash2,
-  Sparkles,
   ShoppingBag,
   ArrowRight,
   BookOpen,

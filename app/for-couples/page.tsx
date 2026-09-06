@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Heart, Sparkles, Shield, RefreshCw } from "lucide-react";
+import { ArrowRight, CheckCircle2, Heart, Shield, RefreshCw } from "lucide-react";
 import StructuredData from "@/components/StructuredData";
 import { canonicalUrl, createWebPageSchema, OG_IMAGE, SITE_NAME } from "@/lib/seo";
 

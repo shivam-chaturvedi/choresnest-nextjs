@@ -28,14 +28,16 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "FAQ | Chores Nest",
+  title: {
+    absolute: "Frequently Asked Questions & Answers – Chores Nest Family App",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "faq", "family organizer"],
+  keywords: [...DEFAULT_KEYWORDS, "faq", "family organizer questions", "household app help"],
   alternates: {
     canonical: canonicalUrl("/faq"),
   },
   openGraph: {
-    title: "Chores Nest FAQ",
+    title: "Frequently Asked Questions & Answers – Chores Nest Family App",
     description,
     url: canonicalUrl("/faq"),
     siteName: "Chores Nest",
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Chores Nest FAQ",
+    title: "Frequently Asked Questions & Answers – Chores Nest Family App",
     card: "summary_large_image",
     description,
     images: [OG_IMAGE.url],

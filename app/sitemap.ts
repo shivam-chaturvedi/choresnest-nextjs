@@ -76,6 +76,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: canonicalUrl("/authors/shivam-chaturvedi"),
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: canonicalUrl("/llms.txt"),
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: canonicalUrl("/help"),
       lastModified: currentDate,
       changeFrequency: "monthly",

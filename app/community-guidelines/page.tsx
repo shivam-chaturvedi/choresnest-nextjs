@@ -5,20 +5,22 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@
 const description = "Chores Nest Community Guidelines explain the acceptable use policy and safety expectations for every household.";
 
 const guidelinesSchema = createWebPageSchema({
-  title: "Community Guidelines | Chores Nest",
+  title: "Community Guidelines – Household Safety & Etiquette Standards",
   description,
   url: canonicalUrl("/community-guidelines"),
 });
 
 export const metadata: Metadata = {
-  title: "Community Guidelines | Chores Nest",
+  title: {
+    absolute: "Community Guidelines – Household Safety & Etiquette Standards",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "community guidelines", "use policy"],
+  keywords: [...DEFAULT_KEYWORDS, "community guidelines", "use policy", "household safety", "family etiquette"],
   alternates: {
     canonical: canonicalUrl("/community-guidelines"),
   },
   openGraph: {
-    title: "Community Guidelines | Chores Nest",
+    title: "Community Guidelines – Household Safety & Etiquette Standards",
     description,
     url: canonicalUrl("/community-guidelines"),
     siteName: "Chores Nest",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Community Guidelines | Chores Nest",
+    title: "Community Guidelines – Household Safety & Etiquette Standards",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

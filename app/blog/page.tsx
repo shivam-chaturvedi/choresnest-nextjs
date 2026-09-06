@@ -88,6 +88,42 @@ export default function BlogIndexPage() {
         </p>
       </div>
 
+      {/* Topic Clusters Grid */}
+      <div className="max-w-[1100px] mx-auto mb-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="rounded-xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Topic Cluster</span>
+          <h3 className="font-heading font-bold text-foreground text-base mb-1.5">Shared Grocery Lists</h3>
+          <p className="text-xs text-muted-foreground font-light mb-3">Aisle-by-aisle shopping systems, note app alternatives, and free tools.</p>
+          <Link href="/tools/grocery-list-maker" className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
+            Free List Maker Tool →
+          </Link>
+        </div>
+        <div className="rounded-xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Topic Cluster</span>
+          <h3 className="font-heading font-bold text-foreground text-base mb-1.5">Chores &amp; Tasks</h3>
+          <p className="text-xs text-muted-foreground font-light mb-3">Fair couple chore division, sustainable charts, and rotation rules.</p>
+          <Link href="/tools/chore-chart-generator" className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
+            Chore Chart Tool →
+          </Link>
+        </div>
+        <div className="rounded-xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Topic Cluster</span>
+          <h3 className="font-heading font-bold text-foreground text-base mb-1.5">Family Finance</h3>
+          <p className="text-xs text-muted-foreground font-light mb-3">Daily expense logs, flexible budget envelopes, and cash leak audits.</p>
+          <Link href="/features/finances" className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
+            Finance Tracker →
+          </Link>
+        </div>
+        <div className="rounded-xl border border-border bg-card p-5 hover:border-primary/40 transition-colors">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-1">Topic Cluster</span>
+          <h3 className="font-heading font-bold text-foreground text-base mb-1.5">Family Routines</h3>
+          <p className="text-xs text-muted-foreground font-light mb-3">15-minute meal plans, organizer comparisons, and shared calendars.</p>
+          <Link href="/features/calendar" className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
+            Shared Calendar →
+          </Link>
+        </div>
+      </div>
+
       {/* Featured post */}
       {featuredPost && (
         <div className="max-w-[1100px] mx-auto mb-16">
@@ -128,7 +164,7 @@ export default function BlogIndexPage() {
       {/* Grid of remaining posts */}
       <div className="max-w-[1100px] mx-auto">
         <h2 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-8 border-b pb-3">
-          All Articles
+          All Articles &amp; Guides
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

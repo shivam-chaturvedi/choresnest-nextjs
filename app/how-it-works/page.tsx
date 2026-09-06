@@ -7,7 +7,7 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@
 const description = "See how Chores Nest helps your household stay synchronized across schedules, chores, meals, and finances.";
 
 const schema = createWebPageSchema({
-  title: "How It Works | Chores Nest",
+  title: "How It Works – Sync Family Schedules, Chores & Lists",
   description,
   url: canonicalUrl("/how-it-works"),
 });
@@ -19,14 +19,16 @@ const steps = [
 ];
 
 export const metadata: Metadata = {
-  title: "How It Works | Chores Nest",
+  title: {
+    absolute: "How It Works – Sync Family Schedules, Chores & Lists",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "process", "family planner"],
+  keywords: [...DEFAULT_KEYWORDS, "process", "family planner", "chore workflow", "household synchronization"],
   alternates: {
     canonical: canonicalUrl("/how-it-works"),
   },
   openGraph: {
-    title: "How It Works | Chores Nest",
+    title: "How It Works – Sync Family Schedules, Chores & Lists",
     description,
     url: canonicalUrl("/how-it-works"),
     siteName: "Chores Nest",
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "How It Works | Chores Nest",
+    title: "How It Works – Sync Family Schedules, Chores & Lists",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

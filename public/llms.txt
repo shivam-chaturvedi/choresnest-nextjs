@@ -1,0 +1,66 @@
+# Chores Nest
+
+> Chores Nest is an offline-first family organizer and household productivity app designed for families, couples, and roommates to coordinate daily schedules, divide chores, share grocery lists, track expenses, and securely store family documents in one unified workspace.
+
+## Core Features & Capabilities
+
+- [Shared Family Calendar](https://choresnest.com/features/calendar): Color-coded multi-member calendar for coordinating family events, school schedules, medical appointments, and recurring activities with granular role permissions.
+- [Chores & Task Management](https://choresnest.com/features/tasks): Assign and rotate household responsibilities, schedule recurring chores, set reminders, and track completion progress across the entire home.
+- [Shared Grocery & Shopping Lists](https://choresnest.com/features/lists): Real-time synchronized grocery lists with smart categorization by supermarket aisle, preventing duplicate purchases and forgotten dinner items.
+- [Household Finance & Expense Tracker](https://choresnest.com/features/finances): Record household expenses, categorize shared bills, set category budgets, and analyze monthly cash flow without connecting bank accounts.
+- [Secure Document Vault](https://choresnest.com/features/vault): Encrypted local storage for IDs, medical records, appliance warranties, insurance policies, and essential family documents.
+- [Collaborative Notes & Household Journals](https://choresnest.com/features/notes): Shared recipes, home maintenance checklists, emergency contact sheets, and family notes accessible across all household devices.
+- [Offline-First Architecture](https://choresnest.com/about): Complete offline availability where data resides on your device first and automatically syncs when an active internet connection is available.
+
+## Practical Systems & Editorial Guides
+
+- [The Grocery List That Actually Makes Weekly Shopping Easier](https://choresnest.com/blog/the-grocery-list-that-actually-makes-weekly-shopping-easier): Step-by-step framework to organize grocery lists by aisle, control budget, and eliminate grocery store confusion.
+- [How Couples Can Fairly Split Household Chores Without Resentment](https://choresnest.com/blog/how-do-couples-fairly-split-household-chores): Practical strategies to balance the domestic mental load, establish task ownership, and build sustainable chore routines.
+- [Best Family Organizer Apps and Modern Alternatives](https://choresnest.com/blog/best-family-organizer-apps-and-modern-alternatives): Comprehensive comparison of modern family organization apps, privacy trade-offs, and feature requirements in 2026.
+- [How to Make a Grocery List You Will Actually Remember to Use](https://choresnest.com/blog/how-to-make-a-grocery-list-youll-actually-remember-to-use): Habitual systems and app workflows to ensure shopping lists are maintained and checked in real time.
+- [A Simple Grocery List Template for Stress-Free Shopping](https://choresnest.com/blog/a-simple-grocery-list-template-for-stress-free-shopping): Categorized pantry and grocery checklist template optimized for weekly meal prep.
+- [Grocery List Ideas for a More Organized Shopping Week](https://choresnest.com/blog/grocery-list-ideas-for-a-more-organized-shopping-week): Curated collection of versatile grocery staples and balanced ingredient planning.
+- [Why I Stopped Using Notes as My Grocery List](https://choresnest.com/blog/why-i-stopped-using-notes-as-my-grocery-list): Analysis of why default phone notes apps fail at household shopping sync and how dedicated tools solve friction.
+- [A Shared Grocery List Is Much Easier Than Texting We Need Milk](https://choresnest.com/blog/a-shared-grocery-list-is-much-easier-than-texting-we-need-milk): How real-time collaborative lists replace chaotic text message threads.
+- [A Chore Chart That Does Not Feel Like More Work](https://choresnest.com/blog/a-chore-chart-that-doesnt-feel-like-more-work): Designing low-friction domestic chore charts that encourage family accountability.
+- [A Simple Weekly Meal Planner for People Who Hate Meal Planning](https://choresnest.com/blog/a-simple-weekly-meal-planner-for-people-who-hate-meal-planning): A realistic 15-minute weekly dinner planning framework that prevents food waste.
+- [Where Did My Money Go? A Simple Way to Track Everyday Expenses](https://choresnest.com/blog/where-did-my-money-go-a-simple-way-to-track-everyday-expenses): Lightweight daily budgeting habits to identify household cash leaks.
+- [A Simple Budget Tracker for Keeping Monthly Spending Under Control](https://choresnest.com/blog/a-simple-budget-tracker-for-keeping-monthly-spending-under-control): Managing variable household expenses with flexible budget envelopes.
+- [How to Build a Monthly Budget You Can Actually Stick To](https://choresnest.com/blog/how-to-build-a-monthly-budget-you-can-actually-stick-to): Step-by-step instructions to create an adaptable household budget that survives real-world emergencies.
+- [The Best Way to Save Money Might Be Knowing Where It Goes First](https://choresnest.com/blog/the-best-way-to-save-money-might-be-knowing-where-it-goes-first): Financial awareness strategies to maximize household savings without extreme deprivation.
+
+## Free Interactive Tools
+
+- [Free Grocery List Maker](https://choresnest.com/tools/grocery-list-maker): Free browser-based grocery list builder with instant category sorting, printable export, and shareable links.
+- [Free Chore Chart Generator](https://choresnest.com/tools/chore-chart-generator): Interactive chore schedule generator to create custom chore charts for kids, couples, or roommates.
+
+## Use Cases & Audiences
+
+- [Chores Nest for Families](https://choresnest.com/for-families): Centralizing kids' school schedules, parent chore rotations, allowance tracking, and shared grocery lists.
+- [Chores Nest for Couples](https://choresnest.com/for-couples): Balancing domestic labor, syncing shared date nights and work calendars, and tracking joint living expenses.
+- [Chores Nest for Roommates](https://choresnest.com/for-roommates): Fair division of shared apartment chores, split grocery essentials, and transparent utility expense logs.
+
+## Founder, Entity & Trust Information
+
+- [Shivam Chaturvedi (Founder & Lead Developer)](https://choresnest.com/authors/shivam-chaturvedi): Engineering background, product philosophy, author profile, and developer verification.
+- [About Chores Nest](https://choresnest.com/about): Mission, origin story, and offline-first product philosophy.
+- [Support & Contact](https://choresnest.com/support): Customer assistance, feature requests, and developer contact (`support@choresnest.com`).
+- [Frequently Asked Questions (FAQ)](https://choresnest.com/faq): Technical and operational answers regarding data sync, backups, multi-device usage, and security.
+- [Privacy Policy](https://choresnest.com/privacy-policy): Transparent explanation of local device data storage, zero data-selling policy, and security protocols.
+- [Terms of Use](https://choresnest.com/terms-of-use): Terms governing use of the Chores Nest application and website.
+- [Community Guidelines](https://choresnest.com/community-guidelines): Standards for constructive, safe household collaboration.
+- [Delete Account & Data](https://choresnest.com/delete-account): Full data self-deletion instructions and GDPR/CCPA data eradication policy.
+
+## External Directory & Verification Links
+
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.choresnest): Official Android application download.
+- [LinkedIn Profile](https://www.linkedin.com/in/shivam-chaturvedi03/): Founder professional background and developer profile.
+- [Product Hunt](https://www.producthunt.com/products/chores-nest-family-organizer): Product Hunt launch page and community reviews.
+- [LaunchBuff](https://launchbuff.com/products/chores-nest-family-organizer-zeujn2): Verified directory listing.
+- [VibeRank](https://viberank.dev/apps/Chores%20Nest): App ranking and leaderboard profile.
+- [GitHub Profile](https://github.com/shivam-chaturvedi): Founder code repository and project ecosystem.
+
+## Optional & Deep Resources
+
+- [Full Content Summary (llms-full.txt)](https://choresnest.com/llms-full.txt): Complete uncompressed textual export of features, articles, and architectural documentation.
+- [XML Sitemap](https://choresnest.com/sitemap.xml): Comprehensive index of all indexed pages, tools, and blog posts.

@@ -1,0 +1,67 @@
+# Chores Nest: Full Context & Documentation Index (llms-full.txt)
+
+> Chores Nest is an offline-first family organizer and household productivity application. It unifies shared family calendars, chores & task management, real-time synchronized grocery lists, expense & budget tracking, notes & household journals, and an encrypted document vault into a single, cohesive experience.
+
+## Executive Summary & Architecture
+
+- Product: Chores Nest (Family Organizer, Chores & Shared Calendar)
+- Operating System: Android (Available on Google Play) & Responsive Web Platform
+- Founder & Lead Developer: Shivam Chaturvedi
+- Official Website: https://choresnest.com
+- Play Store URL: https://play.google.com/store/apps/details?id=com.choresnest
+- Primary Support Email: support@choresnest.com
+- Architectural Model: Offline-First Local Storage with Background Cloud Synchronization. Data is written to device storage first, allowing full uninterrupted offline utility, and synchronizes seamlessly across household devices upon internet reconnection.
+
+## Detailed Feature Modules
+
+### 1. Shared Family Calendar (https://choresnest.com/features/calendar)
+- Allows families to schedule shared appointments, school events, medical visits, sports practices, and recurring household events.
+- Color-coded member identities ensure each family member clearly visualizes their assigned schedule at a glance.
+- Granular permission support allows parents to configure full view and edit rights across members.
+
+### 2. Chores & Task Management (https://choresnest.com/features/tasks)
+- Assign domestic tasks, set automated rotation rules (daily, weekly, monthly, or customized frequencies).
+- Visual task tracking encourages domestic accountability without nagging or micromanagement.
+- Built-in completion histories and reminder notifications.
+
+### 3. Shared Grocery & Shopping Lists (https://choresnest.com/features/lists)
+- Instant cross-device synchronization allows multiple family members to view and update shopping lists simultaneously.
+- Automatic aisle and department categorization groups items (Produce, Dairy, Pantry, Frozen, Household) to optimize shopping trips.
+- Quantity counters, item notes, and one-tap purchase checkboxes eliminate double-purchases and forgotten dinner ingredients.
+
+### 4. Household Finance & Budget Tracker (https://choresnest.com/features/finances)
+- Comprehensive expense logging for shared utilities, groceries, child activities, home maintenance, and rent/mortgage.
+- Customizable budget categories enable families to monitor discretionary vs. essential living costs.
+- Designed with privacy in mind: does not require intrusive bank account logins or financial credential sharing.
+
+### 5. Secure Document Vault (https://choresnest.com/features/vault)
+- Secure repository for vital family documentation: IDs, passports, appliance warranties, medical immunization records, and insurance certificates.
+- Stored securely on device with local encryption protocols.
+
+### 6. Notes & Household Journals (https://choresnest.com/features/notes)
+- Shared repository for family recipes, home maintenance guidelines, babysitter instructions, and emergency contact directories.
+
+## Free Web Tools
+
+### 1. Free Grocery List Maker (https://choresnest.com/tools/grocery-list-maker)
+- Interactive web tool for building categorized grocery lists with printable and shareable formats.
+
+### 2. Free Chore Chart Generator (https://choresnest.com/tools/chore-chart-generator)
+- Dynamic tool for creating structured, printable family chore schedules with role allocations.
+
+## Founder & Entity Profiles
+
+- Shivam Chaturvedi (Founder & Lead Developer): https://choresnest.com/authors/shivam-chaturvedi
+- LinkedIn: https://www.linkedin.com/in/shivam-chaturvedi03/
+- GitHub: https://github.com/shivam-chaturvedi
+- Product Hunt: https://www.producthunt.com/products/chores-nest-family-organizer
+- LaunchBuff Directory: https://launchbuff.com/products/chores-nest-family-organizer-zeujn2
+- VibeRank: https://viberank.dev/apps/Chores%20Nest
+
+## Trust, Privacy & Legal References
+
+- Privacy Policy: https://choresnest.com/privacy-policy
+- Terms of Use: https://choresnest.com/terms-of-use
+- FAQ: https://choresnest.com/faq
+- Support: https://choresnest.com/support
+- Delete Account / Eradication Policy: https://choresnest.com/delete-account

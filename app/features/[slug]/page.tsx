@@ -53,7 +53,7 @@ const featureDetails: Record<string, FeatureDetail> = {
     slug: "calendar",
     title: "Shared Family Calendar",
     description:
-      "Keep every family member on the same schedule and track school events, appointments, and reminders in one shared calendar.",
+      "Keep every family member on the same schedule and track school events, medical appointments, and color-coded family activities with real-time sync in Chores Nest.",
     features: [
       { icon: Eye, text: "Day, week, and month views" },
       { icon: Calendar, text: "Color-coded events by family member" },
@@ -67,7 +67,7 @@ const featureDetails: Record<string, FeatureDetail> = {
     slug: "tasks",
     title: "Tasks and Chores",
     description:
-      "Assign tasks to family members, rotate chores, and monitor completion with priorities and reminders.",
+      "Assign tasks to family members, automate chore rotations, and monitor completion with priorities, deadlines, and reminders in Chores Nest.",
     features: [
       { icon: Users, text: "Assign tasks to family members" },
       { icon: Clock, text: "Set priorities and deadlines" },
@@ -80,7 +80,8 @@ const featureDetails: Record<string, FeatureDetail> = {
   lists: {
     slug: "lists",
     title: "Shared Lists",
-    description: "Create grocery, shopping, and to-do lists that every family member can update instantly.",
+    description:
+      "Create and share synchronized grocery, shopping, and to-do lists with your family, partner, or roommates using Chores Nest.",
     features: [
       { icon: RefreshCw, text: "Real-time updates across devices" },
       { icon: Tag, text: "Categories and quantities" },
@@ -93,7 +94,7 @@ const featureDetails: Record<string, FeatureDetail> = {
     slug: "vault",
     title: "Secure Document Vault",
     description:
-      "Store important household documents, receipts, and IDs with secure encryption, scanning, and reminder badges.",
+      "Store important household documents, IDs, medical records, receipts, and warranties with encrypted offline storage in Chores Nest.",
     features: [
       { icon: ScanLine, text: "Document scanning with OCR" },
       { icon: Lock, text: "Secure encrypted storage" },
@@ -117,7 +118,7 @@ const featureDetails: Record<string, FeatureDetail> = {
     slug: "finance",
     title: "Finance Tracker",
     description:
-      "Understand household spending, budgets, and savings with expense tracking and visual breakdowns.",
+      "Track shared household spending, category budgets, and family cash flow with private expense tracking in Chores Nest.",
     features: [
       { icon: DollarSign, text: "Expense tracking" },
       { icon: TrendingUp, text: "Income records and trends" },
@@ -132,7 +133,8 @@ const featureDetails: Record<string, FeatureDetail> = {
   notes: {
     slug: "notes",
     title: "Notes and Family Journals",
-    description: "Capture ideas, reminders, and shared information with folders, tags, and pinned notes.",
+    description:
+      "Capture family recipes, home maintenance checklists, and shared notes with folders, tags, and pinned items in Chores Nest.",
     features: [
       { icon: Folder, text: "Folders and tags" },
       { icon: Type, text: "Rich text editor" },
@@ -215,16 +217,19 @@ export async function generateMetadata({
 
   const url = canonicalUrl(`/features/${feature.slug}`);
   const pageKeywords = FEATURE_KEYWORD_MAP[slug] ?? [];
+  const metaTitle = `${detail.title} App for Families | Chores Nest`;
 
   return {
-    title: `${feature.title} | Features | Chores Nest`,
+    title: {
+      absolute: metaTitle,
+    },
     description: detail.description,
     keywords: mergeKeywords(DEFAULT_KEYWORDS, pageKeywords),
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: feature.title,
+      title: metaTitle,
       description: detail.description,
       url,
       siteName: "Chores Nest",
@@ -232,7 +237,7 @@ export async function generateMetadata({
       images: [OG_IMAGE],
     },
     twitter: {
-      title: feature.title,
+      title: metaTitle,
       description: detail.description,
       card: "summary_large_image",
       images: [OG_IMAGE.url],

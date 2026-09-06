@@ -6,20 +6,22 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@
 const description = "Learn how to delete your Chores Nest account and what happens to your data.";
 
 const pageSchema = createWebPageSchema({
-  title: "Delete Account | Chores Nest",
+  title: "Delete Account – Request Household Data & Account Removal",
   description,
   url: canonicalUrl("/delete-account"),
 });
 
 export const metadata: Metadata = {
-  title: "Delete Account | Chores Nest",
+  title: {
+    absolute: "Delete Account – Request Household Data & Account Removal",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "account deletion", "data removal"],
+  keywords: [...DEFAULT_KEYWORDS, "account deletion", "data removal", "delete chores nest account", "privacy request"],
   alternates: {
     canonical: canonicalUrl("/delete-account"),
   },
   openGraph: {
-    title: "Delete Account | Chores Nest",
+    title: "Delete Account – Request Household Data & Account Removal",
     description,
     url: canonicalUrl("/delete-account"),
     siteName: "Chores Nest",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Delete Account | Chores Nest",
+    title: "Delete Account – Request Household Data & Account Removal",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

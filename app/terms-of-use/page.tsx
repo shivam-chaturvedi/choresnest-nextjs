@@ -5,20 +5,22 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@
 const description = "Read the Chores Nest Terms of Use to understand eligibility, acceptable behavior, and legal rights when using the service.";
 
 const termsSchema = createWebPageSchema({
-  title: "Terms of Use | Chores Nest",
+  title: "Terms of Use & Service Agreement | Chores Nest Family App",
   description,
   url: canonicalUrl("/terms-of-use"),
 });
 
 export const metadata: Metadata = {
-  title: "Terms of Use | Chores Nest",
+  title: {
+    absolute: "Terms of Use & Service Agreement | Chores Nest Family App",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "terms", "acceptable use"],
+  keywords: [...DEFAULT_KEYWORDS, "terms", "acceptable use", "terms of use", "service agreement"],
   alternates: {
     canonical: canonicalUrl("/terms-of-use"),
   },
   openGraph: {
-    title: "Terms of Use | Chores Nest",
+    title: "Terms of Use & Service Agreement | Chores Nest Family App",
     description,
     url: canonicalUrl("/terms-of-use"),
     siteName: "Chores Nest",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Terms of Use | Chores Nest",
+    title: "Terms of Use & Service Agreement | Chores Nest Family App",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

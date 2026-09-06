@@ -7,7 +7,6 @@ import {
   Copy,
   Users,
   CheckSquare,
-  Sparkles,
   RefreshCw,
   BookOpen,
 } from "lucide-react";

@@ -7,7 +7,7 @@ import PlayStoreBanner from "@/components/ui/PlayStoreBanner";
 const description = "Get your family organized in minutes with Chores Nest. Follow three simple steps to bring everyone together.";
 
 const gettingStartedSchema = createWebPageSchema({
-  title: "Getting Started | Chores Nest",
+  title: "Getting Started Guide – Setup Your Household Workspace",
   description,
   url: canonicalUrl("/getting-started"),
 });
@@ -34,7 +34,9 @@ const steps = [
 ];
 
 export const metadata: Metadata = {
-  title: "Getting Started",
+  title: {
+    absolute: "Getting Started Guide – Setup Your Household Workspace",
+  },
   description,
   keywords: mergeKeywords(DEFAULT_KEYWORDS, [
     "how to organize family life",
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
     canonical: canonicalUrl("/getting-started"),
   },
   openGraph: {
-    title: "Getting Started | Chores Nest",
+    title: "Getting Started Guide – Setup Your Household Workspace",
     description,
     url: canonicalUrl("/getting-started"),
     siteName: "Chores Nest",
@@ -55,7 +57,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Getting Started | Chores Nest",
+    title: "Getting Started Guide – Setup Your Household Workspace",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

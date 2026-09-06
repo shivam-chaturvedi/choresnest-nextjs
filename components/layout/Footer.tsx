@@ -22,6 +22,38 @@ const Footer = () => {
             <div className="flex items-center gap-1 mt-4 text-sm text-muted-foreground font-light">
               Made with <Heart className="h-3.5 w-3.5 text-destructive fill-destructive" /> for families
             </div>
+            <div className="flex flex-wrap items-center gap-3 mt-5">
+              <a
+                href="https://launchbuff.com/products/chores-nest-family-organizer-zeujn2"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Featured on LaunchBuff"
+                className="inline-block transition-opacity hover:opacity-80"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://launchbuff.com/badge-featured-light.svg"
+                  alt="Featured on LaunchBuff"
+                  width={256}
+                  height={80}
+                  className="h-9 w-auto"
+                />
+              </a>
+              <a
+                href="https://viberank.dev/apps/Chores%20Nest"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Chores Nest on VibeRank"
+                className="inline-block transition-opacity hover:opacity-80"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://viberank.dev/badge?app=Chores%20Nest&theme=light"
+                  alt="Chores Nest on VibeRank"
+                  className="h-9 w-auto"
+                />
+              </a>
+            </div>
           </div>
 
           <div>

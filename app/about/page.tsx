@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Shield, Users, WifiOff } from "lucide-react";
 import StructuredData from "@/components/StructuredData";
 import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@/lib/seo";
@@ -7,20 +8,22 @@ const description =
   "Learn more about Chores Nest, the family organizer that simplifies household schedules, chores, and collaboration for every family member.";
 
 const aboutSchema = createWebPageSchema({
-  title: "About | Chores Nest",
+  title: "About Chores Nest – Our Family Organization Mission & Story",
   description,
   url: canonicalUrl("/about"),
 });
 
 export const metadata: Metadata = {
-  title: "About",
+  title: {
+    absolute: "About Chores Nest – Our Family Organization Mission & Story",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "family collaboration mission", "household planning app"],
+  keywords: [...DEFAULT_KEYWORDS, "about chores nest", "family collaboration mission", "household planning app"],
   alternates: {
     canonical: canonicalUrl("/about"),
   },
   openGraph: {
-    title: "About Chores Nest",
+    title: "About Chores Nest – Our Family Organization Mission & Story",
     description,
     url: canonicalUrl("/about"),
     siteName: "Chores Nest",
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "About Chores Nest",
+    title: "About Chores Nest – Our Mission & Family Productivity Story",
     card: "summary_large_image",
     images: [OG_IMAGE.url],
     description,
@@ -72,7 +75,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section>
+      <section className="border-b">
         <div className="w-full px-4 md:px-6 lg:px-8 py-14 text-left">
           <h2 className="text-2xl font-heading text-foreground mb-6">Design Philosophy</h2>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -85,6 +88,29 @@ export default function AboutPage() {
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-secondary/30">
+        <div className="w-full px-4 md:px-6 lg:px-8 py-14 text-left">
+          <h2 className="text-2xl font-heading text-foreground mb-4">The Creator &amp; Engineering</h2>
+          <p className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
+            Chores Nest is designed and built by <Link href="/authors/shivam-chaturvedi" className="font-medium text-foreground hover:text-primary underline underline-offset-4">Shivam Chaturvedi</Link>. Motivated by the friction of managing household logistics across disjointed tools, Shivam engineered Chores Nest as an offline-first, shared family workspace that values user privacy above all else.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/authors/shivam-chaturvedi"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium rounded-lg text-sm hover:opacity-90 transition-opacity"
+            >
+              Meet the Founder &amp; Read Bio →
+            </Link>
+            <a
+              href="mailto:support@choresnest.com"
+              className="inline-flex items-center gap-2 px-5 py-2.5 border border-border bg-card text-foreground font-medium rounded-lg text-sm hover:border-primary/40 transition-colors"
+            >
+              Contact Support
+            </a>
           </div>
         </div>
       </section>

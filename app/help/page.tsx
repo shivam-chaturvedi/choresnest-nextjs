@@ -7,7 +7,7 @@ import { canonicalUrl, createWebPageSchema, DEFAULT_KEYWORDS, OG_IMAGE } from "@
 const description = "Find answers, feature guides, and quick help topics inside the Chores Nest Help Center.";
 
 const helpSchema = createWebPageSchema({
-  title: "Help Center | Chores Nest",
+  title: "Help Center & User Guides – Household Management Support",
   description,
   url: canonicalUrl("/help"),
 });
@@ -33,14 +33,16 @@ const sections = [
 ];
 
 export const metadata: Metadata = {
-  title: "Help Center | Chores Nest",
+  title: {
+    absolute: "Help Center & User Guides – Household Management Support",
+  },
   description,
-  keywords: [...DEFAULT_KEYWORDS, "support articles", "help docs"],
+  keywords: [...DEFAULT_KEYWORDS, "support articles", "help docs", "family organizer help", "household guides"],
   alternates: {
     canonical: canonicalUrl("/help"),
   },
   openGraph: {
-    title: "Help Center | Chores Nest",
+    title: "Help Center & User Guides – Household Management Support",
     description,
     url: canonicalUrl("/help"),
     siteName: "Chores Nest",
@@ -48,7 +50,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Chores Nest Help Center",
+    title: "Help Center & User Guides – Household Management Support",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],

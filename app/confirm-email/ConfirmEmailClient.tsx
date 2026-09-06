@@ -41,7 +41,7 @@ export default function ConfirmEmailClient() {
           <div className="rounded-[32px] bg-[#021c3e] px-6 py-8 text-white shadow-[0_30px_60px_rgba(2,28,62,0.45)]">
             <p className="tracking-[0.4em] text-xs uppercase text-white/60">Email confirmed</p>
             <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-              Thank you — your email is confirmed
+              Thank you, your email is confirmed
             </h1>
             <p className="max-w-3xl text-lg text-white/70 md:text-xl">
               Your inbox has been verified. We are routing you back into the Chores Nest app so you

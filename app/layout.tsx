@@ -12,6 +12,10 @@ import {
   OG_IMAGE,
   SITE_NAME,
   SITE_URL,
+  founderPersonSchema,
+  organizationSchema,
+  softwareApplicationSchema,
+  websiteSchema,
 } from "@/lib/seo";
 import { GA_MEASUREMENT_ID } from "@/lib/firebase";
 import { siteNavigation } from "@/lib/navigation";
@@ -26,7 +30,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Chores Nest – Family Organizer App",
+    default: "Chores Nest – Family Organizer, Chores & Shared Calendar",
     template: "%s | Chores Nest",
   },
   description: DEFAULT_DESCRIPTION,
@@ -34,14 +38,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "Chores Nest – Family Organizer App",
+    title: "Chores Nest – Family Organizer, Chores & Shared Calendar",
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
     images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chores Nest – Family Organizer App",
+    title: "Chores Nest – Family Organizer, Chores & Shared Calendar",
     description: DEFAULT_DESCRIPTION,
     images: [OG_IMAGE.url],
   },
@@ -53,57 +57,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-};
-
-const baseDescription = DEFAULT_DESCRIPTION;
-
-const organizationStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Chores Nest",
-  url: SITE_URL,
-  logo: "https://choresnest.com/app_icon.png",
-  sameAs: ["https://play.google.com/store/apps/details?id=com.choresnest"],
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      email: "support@choresnest.com",
-      contactType: "Customer Support",
-    },
-  ],
-};
-
-const websiteStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  url: SITE_URL,
-  name: "Chores Nest",
-  description: baseDescription,
-  inLanguage: "en",
-  publisher: {
-    "@type": "Organization",
-    name: "Chores Nest",
-    url: SITE_URL,
-    logo: "https://choresnest.com/app_icon.png",
-  },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${SITE_URL}/search?q={search_term_string}`,
-    "query-input": "required name=search_term_string",
-  },
-};
-
-const faqStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
 };
 
 const breadcrumbStructuredData = {
@@ -118,9 +71,10 @@ const breadcrumbStructuredData = {
 };
 
 const structuredData = [
-  organizationStructuredData,
-  websiteStructuredData,
-  faqStructuredData,
+  organizationSchema,
+  founderPersonSchema,
+  websiteSchema,
+  softwareApplicationSchema,
   breadcrumbStructuredData,
 ];
 

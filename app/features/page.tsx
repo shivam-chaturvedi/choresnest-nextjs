@@ -40,20 +40,22 @@ const featuresPageKeywords = [
 ];
 
 const pageSchema = createWebPageSchema({
-  title: "Features | Chores Nest",
+  title: "Chores Nest Features – Family Calendar, Chores & Lists",
   description,
   url: canonicalUrl("/features"),
 });
 
 export const metadata: Metadata = {
-  title: "Features | Chores Nest Family Organizer App",
+  title: {
+    absolute: "Chores Nest Features – Family Calendar, Chores & Lists",
+  },
   description,
   keywords: mergeKeywords(DEFAULT_KEYWORDS, featuresPageKeywords),
   alternates: {
     canonical: canonicalUrl("/features"),
   },
   openGraph: {
-    title: "Features | Chores Nest",
+    title: "Chores Nest Features – Family Calendar, Chores & Lists",
     description,
     url: canonicalUrl("/features"),
     siteName: "Chores Nest",
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: {
-    title: "Features | Chores Nest",
+    title: "Chores Nest Features – Family Calendar, Chores & Lists",
     description,
     card: "summary_large_image",
     images: [OG_IMAGE.url],
@@ -149,7 +151,7 @@ export default function FeaturesOverviewPage() {
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-heading text-foreground">Everything Your Family Needs</h1>
               <p className="mt-4 text-lg text-muted-foreground max-w-xl leading-relaxed">
-                Chores Nest combines the tools families use every day into a single shared system. No more switching between apps — just one simple workspace for schedules, tasks, lists, finances, and documents.
+                Chores Nest combines the tools families use every day into a single shared system. No more switching between apps, just one simple workspace for schedules, tasks, lists, finances, and documents.
               </p>
               <Link
                 href="/getting-started"
