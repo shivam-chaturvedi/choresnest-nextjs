@@ -58,6 +58,8 @@
 - [Product Hunt](https://www.producthunt.com/products/chores-nest-family-organizer): Product Hunt launch page and community reviews.
 - [LaunchBuff](https://launchbuff.com/products/chores-nest-family-organizer-zeujn2): Verified directory listing.
 - [VibeRank](https://viberank.dev/apps/Chores%20Nest): App ranking and leaderboard profile.
+- [LaunchNest](https://launchnest.io/p/chores-nest): LaunchNest featured product profile.
+- [LaunchIgniter](https://launchigniter.com/product/chores-nest): LaunchIgniter directory listing.
 - [GitHub Profile](https://github.com/shivam-chaturvedi): Founder code repository and project ecosystem.
 
 ## Optional & Deep Resources

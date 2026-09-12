@@ -57,6 +57,8 @@
 - Product Hunt: https://www.producthunt.com/products/chores-nest-family-organizer
 - LaunchBuff Directory: https://launchbuff.com/products/chores-nest-family-organizer-zeujn2
 - VibeRank: https://viberank.dev/apps/Chores%20Nest
+- LaunchNest: https://launchnest.io/p/chores-nest
+- LaunchIgniter: https://launchigniter.com/product/chores-nest
 
 ## Trust, Privacy & Legal References
 

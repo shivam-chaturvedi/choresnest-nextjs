@@ -45,6 +45,8 @@ export const ORGANIZATION_SAME_AS = [
   "https://www.producthunt.com/products/chores-nest-family-organizer",
   "https://launchbuff.com/products/chores-nest-family-organizer-zeujn2",
   "https://viberank.dev/apps/Chores%20Nest",
+  "https://launchnest.io/p/chores-nest",
+  "https://launchigniter.com/product/chores-nest",
   "https://github.com/shivam-chaturvedi",
   "https://x.com/choresnest",
 ];

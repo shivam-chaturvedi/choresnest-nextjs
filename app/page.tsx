@@ -299,7 +299,7 @@ export default function HomePage() {
               </div>
 
               {/* Badges Bar */}
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a
                   href="https://www.producthunt.com/products/chores-nest-family-organizer/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-chores-nest-family-organizer"
                   target="_blank"
@@ -310,9 +310,9 @@ export default function HomePage() {
                   <img
                     src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1310482&theme=light"
                     alt="Chores Nest on Product Hunt"
-                    style={{ width: "220px", height: "48px" }}
-                    width="220"
-                    height="48"
+                    style={{ width: "200px", height: "44px" }}
+                    width="200"
+                    height="44"
                   />
                 </a>
                 <a
@@ -325,9 +325,39 @@ export default function HomePage() {
                   <img
                     src="https://viberank.dev/badge?app=Chores%20Nest&theme=light"
                     alt="Chores Nest on VibeRank"
-                    className="h-10 w-auto"
-                    width="140"
-                    height="40"
+                    className="h-9 w-auto"
+                    width="135"
+                    height="38"
+                  />
+                </a>
+                <a
+                  href="https://launchnest.io/p/chores-nest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 transition-opacity"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://launchnest.io/badge/chores-nest.svg?variant=featured&theme=light"
+                    alt="Chores Nest on LaunchNest"
+                    width="220"
+                    height="56"
+                    className="h-9 w-auto"
+                  />
+                </a>
+                <a
+                  href="https://launchigniter.com/product/chores-nest?ref=badge-chores-nest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 transition-opacity"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://launchigniter.com/api/badge/chores-nest?theme=light"
+                    alt="Featured on LaunchIgniter"
+                    width="212"
+                    height="55"
+                    className="h-9 w-auto"
                   />
                 </a>
               </div>

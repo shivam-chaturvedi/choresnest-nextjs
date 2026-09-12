@@ -36,7 +36,7 @@ const Footer = () => {
                   alt="Featured on LaunchBuff"
                   width={256}
                   height={80}
-                  className="h-9 w-auto"
+                  className="h-8 w-auto"
                 />
               </a>
               <a
@@ -50,7 +50,39 @@ const Footer = () => {
                 <img
                   src="https://viberank.dev/badge?app=Chores%20Nest&theme=light"
                   alt="Chores Nest on VibeRank"
-                  className="h-9 w-auto"
+                  className="h-8 w-auto"
+                />
+              </a>
+              <a
+                href="https://launchnest.io/p/chores-nest"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Chores Nest on LaunchNest"
+                className="inline-block transition-opacity hover:opacity-80"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://launchnest.io/badge/chores-nest.svg?variant=featured&theme=light"
+                  alt="Chores Nest on LaunchNest"
+                  width={220}
+                  height={56}
+                  className="h-8 w-auto"
+                />
+              </a>
+              <a
+                href="https://launchigniter.com/product/chores-nest?ref=badge-chores-nest"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Featured on LaunchIgniter"
+                className="inline-block transition-opacity hover:opacity-80"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://launchigniter.com/api/badge/chores-nest?theme=light"
+                  alt="Featured on LaunchIgniter"
+                  width={212}
+                  height={55}
+                  className="h-8 w-auto"
                 />
               </a>
             </div>
